@@ -13,3 +13,32 @@ GET__/api/users/all__Wed May 21 2025 11:09:25 GMT+0500 (Uzbekistan Standard Time
 GET__/api/users/all__Wed May 21 2025 11:09:38 GMT+0500 (Uzbekistan Standard Time)__500__ReferenceError__user is not defined 
 GET__/api/users/all__Wed May 21 2025 11:12:40 GMT+0500 (Uzbekistan Standard Time)__500__ReferenceError__user is not defined 
 GET__/api/users/all__Wed May 21 2025 11:16:27 GMT+0500 (Uzbekistan Standard Time)__500__ReferenceError__user is not defined 
+POST__/api/v1/branch/create__Sun May 25 2025 06:24:20 GMT+0500 (Uzbekistan Standard Time)__500__CastError__Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "User" 
+POST__/api/v1/branch/create__Sun May 25 2025 06:24:38 GMT+0500 (Uzbekistan Standard Time)__500__CastError__Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "User" 
+POST__/api/v1/branch/create__Sun May 25 2025 06:34:21 GMT+0500 (Uzbekistan Standard Time)__500__CastError__Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "User" 
+POST__/api/v1/branch/create__Sun May 25 2025 06:37:58 GMT+0500 (Uzbekistan Standard Time)__500__CastError__Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "User" 
+POST__/api/v1/branch/create__Sun May 25 2025 06:39:17 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'body' of 'req.body' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 06:39:31 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'body' of 'req.body' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 06:39:40 GMT+0500 (Uzbekistan Standard Time)__500__CastError__Cast to ObjectId failed for value "{ _id: undefined }" (type Object) at path "_id" for model "User" 
+POST__/api/v1/branch/create__Sun May 25 2025 06:39:57 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'token' of 'req.body' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:09:24 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'token' of 'req.body' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:09:57 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'token' of 'req.body' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:10:26 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'token' of 'req.hedrs' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:10:52 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'token' of 'req.hedris' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:13:56 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:14:18 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:14:31 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:15:33 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:16:22 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:17:24 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:17:56 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:18:10 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:20:08 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:21:58 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:24:33 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:26:47 GMT+0500 (Uzbekistan Standard Time)__500__MongooseError__Operation `users.findOne()` buffering timed out after 10000ms 
+POST__/api/v1/branch/create__Sun May 25 2025 19:28:58 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:31:41 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:32:12 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:34:04 GMT+0500 (Uzbekistan Standard Time)__500__TypeError__Cannot destructure property 'role' of 'req.user' as it is undefined. 
+POST__/api/v1/branch/create__Sun May 25 2025 19:52:42 GMT+0500 (Uzbekistan Standard Time)__500__ReferenceError__CustomError is not defined 

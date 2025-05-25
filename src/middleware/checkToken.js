@@ -1,35 +1,30 @@
-import userModel from "../models/usersModel.js"
-import { ValidationError } from "../utils/error.js"
-import JWT from "../utils/jwt.js"
-
+import userModel from "../models/usersModel.js";
+import { CustomError, ValidationError, NotFoundError, ForbiddenError } from "../utils/error.js";
+import jwt from "../utils/jwt.js";
 
 export default async (req, res, next) => {
-    try {
-        let { token } = req.headers
+  try {
+    const { token } = req.headers;
+    if (!token) throw new ValidationError(400, "Token is required");
 
+    const { user_id, userIp, userAgent } = jwt.verify(token);
 
-        if (!token) throw new ValidationError(404, "Token is required")
+    const user = await userModel.findById(user_id);
+    if (!user) throw new NotFoundError(404, "User not found");
 
-        let { userip, useragent, _id } = JWT.verify(token)
-        if (req.ip !== userip || req.headers?.["user-agent"] !== useragent) {
-            throw new ValidationError(403, "Mumkin emas ip xato");
-        }
-console.log(userip,useragent);
-
-        let user = await userModel.findById({ _id })
-        if (!user) {
-            throw new ValidationError(404, "User not found")
-        }
-        req.userId = _id
-
-        next()
-    } catch (error) {
-        if (error.name == "TokenExpiredError") {
-            next(new ValidationError(404, "Token expire!"))
-        }
-        if (error.name == "JsonWebTokenError") {
-            next(new ValidationError(400, "Invalid token"))
-        }
-        next(error)
+    if (req.ip !== userIp || req.headers["user-agent"] !== userAgent) {
+      throw new ForbiddenError(403, "Unauthorized: Device mismatch");
     }
-}
+
+    req.userId = user_id;
+    next();
+  } catch (error) {
+    if (error.name === "TokenExpiredError") {
+      return next(new ForbiddenError(401, "Token expired"));
+    }
+    if (error.name === "JsonWebTokenError") {
+      return next(new ForbiddenError(401, "Invalid token"));
+    }
+    next(error);
+  }
+};

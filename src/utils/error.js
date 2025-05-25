@@ -32,3 +32,10 @@ export class ForbiddenError extends Error{
         this.message = message
     }
 }
+export class CustomError extends Error {
+  constructor(status, message) {
+    super(message);
+    this.status = status;
+    this.name = "CustomError";
+  }
+}

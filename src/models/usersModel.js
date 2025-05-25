@@ -1,5 +1,4 @@
 import { Schema, model } from "mongoose"
-import { type } from "os"
 
 let userSchema = new Schema({
     username : {type:String,unique:true},

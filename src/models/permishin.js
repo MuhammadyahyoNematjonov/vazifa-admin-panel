@@ -1,12 +1,8 @@
-import { Schema, model } from "mongoose"
-import { type } from "os"
+import { Schema, model } from "mongoose";
 
-let  pessschema = new Schema({
-    user_id:{type:Schema.Types.ObjectId,ref:"user"},
-    actios:[String],
-    pessModle:String
-},{strict:true})
-
-let userModel = model("pessschema", pessschema)
-
-export default userModel 
+export const permissionModel = model("Permission", new Schema({
+  user_id: { type: Schema.Types.ObjectId, ref: "User" },
+  branch_id: { type: Schema.Types.ObjectId, ref: "Branch" },
+  createdAt: { type: Date, default: new Date() },
+  action:[String]
+}));

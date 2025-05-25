@@ -12,6 +12,7 @@ app.use(express.json())
 await connectDB()
 
 app.use(indexRouter.userRouter)
+app.use(indexRouter.brench)
 
 app.use((error, req, res, next) => {
     if (error.status && error.status < 500) {
